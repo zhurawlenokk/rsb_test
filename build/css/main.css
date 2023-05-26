@@ -609,6 +609,9 @@ button.swiper-pagination-bullet {
     margin-right: 54px;
     color: #84B245;
     padding: 10px 20px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .back-button span {
