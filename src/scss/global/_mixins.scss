@@ -1,0 +1,8 @@
+@import "../mixins/breakpoints";
+
+@mixin flex($align: flex-start, $space: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: $align;
+    justify-content: $space;
+}

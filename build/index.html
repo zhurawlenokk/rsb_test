@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSB</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="./images/logo.svg" alt="logo" />
+                <span class="header__logo-text text--white">RS-App</span>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="container intro__container content-wrap">
+                <div class="intro__content">
+                    <h1 class="title">Отправьте одну заявку на кредит или&#160;рассрочку сразу в несколько банков</h1>
+                    <p class="intro__text">Менеджер свяжется с вами по телефону и&#160;расскажет об одобренных предложениях</p>
+                </div>
+                <div class="intro__pic">
+                    <picture>
+                        <source srcset="./images/intro_pic320.svg" media="(max-width: 500px)">
+                        <source srcset="./images/intro_pic768.svg" media="(max-width: 800px)">
+                        <img src="./images/intro_pic.svg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <div class="container order__container">
+                <form action="#" method="#" class="order__form">
+                    <div class="order__form-step step step--one step--active">
+                        <h2 class="subtitle subtitle--green">Шаг 1</h2>
+                        <p class="text step__text">Данные о Клиенте</p>
+                        <div class="progressbar content-wrap">
+                            <div class="progressbar__item progressbar__item--green"></div>
+                            <div class="progressbar__item"></div>
+                            <div class="progressbar__item"></div>
+                        </div>
+                        <div class="content-wrap step__content">
+                            <div class="input-group">
+                                <input class="order__form-input" name="surname" type="text" id="surname-label">
+                                <label class="order__form-label" for="surname-label">Фамилия</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="order__form-input" name="name" type="text" id="name-label">
+                                <label class="order__form-label" for="name-label">Имя</label>
+                            </div>
+                            <div class="input-group patronymic-group">
+                                <input class="order__form-input" name="patronymic" type="text" id="patronymic-label">
+                                <label class="order__form-label" for="patronymic-label">Отчество</label>
+                                <div class="checkbox-label">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox-input" id="checkbox-input">
+                                        <span class="check"></span>
+                                    </div>
+                                    <span class="checkbox__text">Нет отчества</span>
+                                </div>
+                            </div>
+                            <div class="input-group select">
+                                <input class="order__form-input select-input" name="gender" type="text" id="gender-label">
+                                <label class="order__form-label" for="gender-label">Пол</label>
+                                <ul class="select__list">
+                                    <li class="select__list-item">мужской</li>
+                                    <li class="select__list-item">женский</li>
+                                </ul>
+                            </div>
+                            <div class="input-group">
+                                <input class="order__form-input" name="birthday" type="number" id="birthday">
+                                <label class="order__form-label" for="birthday">Дата рождения</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="order__form-input" name="phone" type="tel" id="phone-label">
+                                <label class="order__form-label" for="phone-label">Мобильный телефон</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="order__form-input" type="number" id="code-label">
+                                <label class="order__form-label" for="code-label">Код промоутера *</label>
+                                <p class="input-group__text">Если есть</p>
+                            </div>
+                        </div>
+                        <div class="order__form-buttons">
+                            <button class="order__form-button next-button button button--green">Далее</button>
+                        </div>
+                    </div>
+                    <div class="order__form-step step step--two">
+                        <h2 class="subtitle subtitle--green">Шаг 2</h2>
+                        <p class="text step__text">Данные о товарной корзине</p>
+                        <div class="progressbar content-wrap">
+                            <div class="progressbar__item progressbar__item--green"></div>
+                            <div class="progressbar__item progressbar__item--green"></div>
+                            <div class="progressbar__item"></div>
+                        </div>
+                        <div class="step__content">
+                            <div class="product__labels">
+                                <span class="product__label">Наименование товара</span>
+                                <span class="product__label">Стоимость</span>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__item-name product__item-content"><p class="product__label product__label--mobile">Наименование товара</p><p>Велосипед</p></div>
+                                <div class="product__item-count product__item-content"><p class="product__label product__label--mobile">Стоимость</p><p>45 630 ₽</p></div>
+                                <button class="delete-button">
+                                    <span class="delete-button__icon">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.9846 11L1.3932 1M1.3932 11L10.9846 1" stroke="#9C9AB1" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>Удалить товар</span>
+                                </button>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__item-name product__item-content"><p class="product__label product__label--mobile">Наименование товара</p><p>Велосипед</p></div>
+                                <div class="product__item-count product__item-content"><p class="product__label product__label--mobile">Стоимость</p><p>45 630 ₽</p></div>
+                                <button class="delete-button">
+                                    <span class="delete-button__icon">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.9846 11L1.3932 1M1.3932 11L10.9846 1" stroke="#9C9AB1" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>Удалить товар</span>
+                                </button>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__item-name product__item-content"><p class="product__label product__label--mobile">Наименование товара</p><p>Велосипед</p></div>
+                                <div class="product__item-count product__item-content"><p class="product__label product__label--mobile">Стоимость</p><p>45 630 ₽</p></div>
+                                <button class="delete-button">
+                                    <span class="delete-button__icon">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.9846 11L1.3932 1M1.3932 11L10.9846 1" stroke="#9C9AB1" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </span>
+                                    <span>Удалить товар</span>
+                                </button>
+                            </div>
+                            <div class="step__bottom content-wrap">
+                                <div class="product__item-summary"><p>Итого: <span class="green">147 800.55 руб.</span></p></div>
+                                <button class="add-button">
+                                    <span class="button__icon add-button__icon">
+                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_338_13)">
+                                            <circle cx="14.1421" cy="12.1421" r="12" fill="#84B245"/>
+                                            <path d="M14.1421 18.1421L14.1421 7.07106M8.60658 12.6066L19.6776 12.6066" stroke="white" stroke-width="2"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_338_13">
+                                            <rect width="28.2843" height="28.2843" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg> 
+                                    </span>
+                                    <span>Добавить товар</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="order__form-buttons">
+                            <button class="order__form-button back-button button">
+                                <span class="button__icon">
+                                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L2 5L6 1" stroke="#84B245" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                                <span>Назад</span>
+                            </button>
+                            <button class="order__form-button next-button button button--green">Далее</button>
+                        </div>
+                    </div>
+                    <div class="order__form-step step step--three">
+                        <h2 class="subtitle subtitle--green">Шаг 3</h2>
+                        <p class="text step__text">Прикрепление изображений</p>
+                        <div class="progressbar content-wrap">
+                            <div class="progressbar__item progressbar__item--green"></div>
+                            <div class="progressbar__item progressbar__item--green"></div>
+                            <div class="progressbar__item progressbar__item--green"></div>
+                        </div>
+                        <div class="step__content">
+                            <h2 class="subtitle subtitle--thin">Паспорт</h2>
+                            <p class="text text--darkgrey step-three__text">Старайтесь не закрывать пальцами данные и фотографировать при хорошем освещении</p>
+                            <div class="content-wrap passport">
+                                <div class="passport__item">
+                                    <div class="passport__item-pic">
+                                        <img src="./images/pass1.svg" alt="" />
+                                    </div>
+                                    <div class="passport__item-content">
+                                        <p class="passport__item-title">Разворот паспорта с фотографией</p>
+                                        <div class="passport__item-success">
+                                            <p class="passport__item-text">Загружено</p>
+                                            <div class="passport__item-upload">
+                                                <span class="passport__item-pic-name">паспорт1.jpeg</span>
+                                                <button class="passport__item-button">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 11L1 0.999999M1 11L11 1" stroke="#C2213D" stroke-width="1.5"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="passport__item">
+                                    <div class="passport__item-pic">
+                                        <img src="./images/pass2.svg" alt="" />
+                                    </div>
+                                    <div class="passport__item-content">
+                                        <p class="passport__item-title">Разворот паспорта с пропиской</p>
+                                        <button class="passport__item-upload-button button button--green">Загрузить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="subtitle subtitle--thin">Ваша фотография</h2>
+                            <p class="text text--darkgrey step-three__text">Старайтесь держать камеру на уровне глаз и фотографировать при хорошем освещении</p>
+                            <div class="passport__photo">
+                                <div class="passport__item">
+                                    <div class="passport__item-pic">
+                                        <img src="./images/pass2.svg" alt="" />
+                                    </div>
+                                    <div class="passport__item-content">
+                                        <p class="passport__item-title">Разворот паспорта с пропиской</p>
+                                        <button class="passport__item-upload-button button button--green">Загрузить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__form-buttons">
+                            <div class="order__form-agreement">
+                                <div class="checkbox-label">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox-input" id="agreement-input">
+                                        <span class="check"></span>
+                                    </div>
+                                    <a href="#" target="_blank" class="order__form-link">Соглашаюсь с Правилами заполнения заявки и присоединяюсь к&#160;Соглашению об использовании ПЭП
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="order__form-button back-button">
+                                <span class="button__icon">
+                                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L2 5L6 1" stroke="#84B245" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                                <span>Назад</span>
+                            </button>
+                            <button class="order__form-button next-button button button--green">Далее</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="create-product-modal">
+                    <div class="create-product-modal__content">
+                        <button class="button modal-close__button">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 17L0.999999 1M0.999998 17L17 1" stroke="#9C9AB1" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <h3 class="create-product-modal__title">Создать товар</h3>
+                        <form action="#" method="#" class="create-product__form">
+                            <div class="input-group modal-input-group">
+                                <input class="order__form-input" name="product-name" type="text" id="product-name">
+                                <label class="order__form-label" for="product-name">Название товара</label>
+                            </div>
+                            <div class="input-group modal-input-group">
+                                <input class="order__form-input" name="product-price" type="number" id="product-price">
+                                <label class="order__form-label" for="product-price">Стоимость</label>
+                            </div>
+                            <button type="submit" class="button button--green modal-add__button">Добавить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text text--white">© 2017 - 2021 АО «Банк Русский Стандарт».</p>
+            <p class="footer__text text--grey">Генеральная лицензия Банка России № 2289 выдана бессрочно 19 ноября 2014 года</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreement</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="./images/logo.svg" alt="logo" />
+                <span class="header__logo-text text--white">RS-App</span>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="agreement-modal agreement">
+            <div class="agreement__content">
+                <h2 class="agreement__title">Согласие на дистанционное взаимодействие</h2>
+                <form action="#" method="#" class="agreement__form">
+                    <div class="inputs-wrap content-wrap">
+                        <label for="agreement__input" class="agreement__label">Введите код из СМС</label>
+                        <input type="number" class="agreement__input"  max_n=1 tabindex=1>
+                        <input type="number" class="agreement__input"  max_n=1 tabindex=2>
+                        <input type="number" class="agreement__input"  max_n=1 tabindex=3>
+                        <input type="number" class="agreement__input"  max_n=1 tabindex=4>
+                    </div>
+                    <button class="button button--green agreement__button" type="submit">Подтвердить</button>
+                    <p class="agreement__text">Отправить СМС повторно можно через 20 сек</p>
+                </form>
+            </div>
+        </div>
+        <div class="success-modal success">
+            <div class="success__content">
+                <div class="success__icon">
+                    <img src="./images/success.svg" alt="">
+                </div>
+                <h2 class="success__title">Заявка № 1000020194 успешно отправлена.</h2>
+                <p class="success__text">Ожидайте звонка в течение 10 минут <br/> с 7:00 до 21:00 по московскому времени.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text text--white">© 2017 - 2021 АО «Банк Русский Стандарт».</p>
+            <p class="footer__text text--grey">Генеральная лицензия Банка России № 2289 выдана бессрочно 19 ноября 2014 года</p>
+        </div>
+    </footer>
+</body>
+</html>
