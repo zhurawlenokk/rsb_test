@@ -142,12 +142,15 @@
     }
 
     .product__labels {
-        padding-left: 19px;
+        padding: 0 19px;
+        max-width: unset;
     }
 
     .product__label {
+        max-width: 35.5%;
+
         &:not(:last-child) {
-            margin-right: 137px;
+            margin-right: 41px;
         }
     }
 
@@ -193,10 +196,8 @@
         }
     }
 
-    .delete-button {
-        span {
-            display: none;
-        }
+    .delete-button__text {
+        display: none;
     }
 
     .step--three {
@@ -344,6 +345,8 @@
             margin-bottom: 5px;
             font-size: 11px;
             line-height: 15px;
+            max-width: unset;
+            margin-right: 0;
         }
     }
     
@@ -353,8 +356,12 @@
         right: 10px;
 
         &__icon {
-            max-width: 16px;
             width: 100%;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
         }
     }
 
@@ -406,6 +413,7 @@
 
     .create-product-modal {
         align-items: flex-end;
+        max-width: unset;
 
         &__content {
             padding: 30px 20px;

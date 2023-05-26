@@ -921,18 +921,27 @@ button.swiper-pagination-bullet {
 }
 
 .product__labels {
-    padding-left: 46px;
+    padding: 0 46px;
     margin-bottom: 9px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 75%;
+    width: 100%;
 }
 
 .product__label {
     font-size: 12px;
     line-height: 15px;
     color: #999999;
+    max-width: 254px;
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
 }
 
 .product__label:not(:last-child) {
-    margin-right: 186px;
+    margin-right: 65px;
 }
 
 .product__label--mobile {
@@ -1530,11 +1539,16 @@ button.swiper-pagination-bullet {
     }
 
     .product__labels {
-        padding-left: 19px;
+        padding: 0 19px;
+        max-width: unset;
+    }
+
+    .product__label {
+        max-width: 35.5%;
     }
 
     .product__label:not(:last-child) {
-        margin-right: 137px;
+        margin-right: 41px;
     }
 
     .create-product-modal {
@@ -1579,7 +1593,7 @@ button.swiper-pagination-bullet {
         padding: 0 0 0 30px;
     }
 
-    .delete-button span {
+    .delete-button__text {
         display: none;
     }
 
@@ -1723,6 +1737,8 @@ button.swiper-pagination-bullet {
         margin-bottom: 5px;
         font-size: 11px;
         line-height: 15px;
+        max-width: unset;
+        margin-right: 0;
     }
 
     .delete-button {
@@ -1732,8 +1748,12 @@ button.swiper-pagination-bullet {
     }
 
     .delete-button__icon {
-        max-width: 16px;
         width: 100%;
+    }
+
+    .delete-button__icon svg {
+        width: 18px;
+        height: 18px;
     }
 
     .product__item {
@@ -1792,6 +1812,7 @@ button.swiper-pagination-bullet {
         -webkit-box-align: end;
         -ms-flex-align: end;
         align-items: flex-end;
+        max-width: unset;
     }
 
     .create-product-modal__content {
