@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function render(target, currentStep) {
             if (currentStep > 2) {
-                location.href = '/build/agreement.html';
+                location.href = '/rsb_test/build/agreement.html';
             } else {
                 var parent = target.closest('.step');
 
