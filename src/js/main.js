@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function render(target, currentStep) {
             if (currentStep > 2) {
-                location.href = '/agreement.html';
+                location.href = '/build/agreement.html';
             } else {
                 var parent = target.closest('.step');
 
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     nav();
-    
+
     $('.agreement__input').on('keyup', function(e) {
         var value = $(this).val();
         var len = value.length;
